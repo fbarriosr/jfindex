@@ -1,0 +1,42 @@
+
+\documentclass[preprint,landscape,12pt]{elsarticle}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{color}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[T1]{fontenc}       % Use modern font encodings
+\usepackage{subcaption}
+\usepackage{latexsym}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{adjustbox}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{commath}
+\usepackage{booktabs,caption}
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{threeparttable}
+
+\journal{JOURNAL}
+\begin{document}
+	\begin{table}
+		\caption{ Tabla eV}
+		\centering
+		\footnotesize
+		\begin{tabular}{llrrrrrrrrr}
+			\hline
+			\textbf{Density} & \textbf{Input} &$\varepsilon_{_{\mathrm{H}}}$	& $\varepsilon_{_{\mathrm{L}}}$  & $\varepsilon_{_{\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\mathrm{HL})$  & \textbf{$\left|\Delta\,\mathrm{SL}\right|$} & $\frac{\left|\Delta\,\mathrm{SL}\right|}{\varepsilon_{_{\mathrm{H}}}}$ \\
+			\textbf{Functional} & \textbf{Name}&   &  &     &   &  &  &  &  &\\
+			\hline \hline 
+
+RPBE0DH(B10C2) & dft003 & -17.5455 & -12.50264 & -10.87648 & 5.04285 & 0.84188 & 0.80557 & 1.1652 & 1.62617 & -2.52205\\
+
+	 		\hline
+		\end{tabular}
+			\label{tab:eV}
+	\end{table}
+\end{document}
+\endinput
+
