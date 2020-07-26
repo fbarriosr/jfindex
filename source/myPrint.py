@@ -46,10 +46,10 @@ def latex(fileName, projects,cifras,modo):
 	header += """
 		\\centering
 		\\footnotesize
-		\\begin{tabular}{llrrrrrrrrr}
+		\\begin{tabular}{lrrrrrrrr}
 			\\hline
-			\\textbf{Density} & \\textbf{Input} &$\\varepsilon_{_{\\mathrm{H}}}$	& $\\varepsilon_{_{\\mathrm{L}}}$  & $\\varepsilon_{_{\\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\\mathrm{HL})$  & \\textbf{$\\left|\\Delta\\,\\mathrm{SL}\\right|$} & $\\frac{\\left|\\Delta\\,\\mathrm{SL}\\right|}{\\varepsilon_{_{\\mathrm{H}}}}$ \\\\
-			\\textbf{Functional} & \\textbf{Name}&   &  &     &   &  &  &  &  &\\\\
+			\\textbf{Density}    & $\\varepsilon_{_{\\mathrm{H}}}$	& $\\varepsilon_{_{\\mathrm{L}}}$  & $\\varepsilon_{_{\\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\\mathrm{HL})$  & \\textbf{$\\left|\\Delta\\,\\mathrm{SL}\\right|$}  \\\\
+			\\textbf{Functional} &   &  &     &   &  &  &  &  \\\\
 			\\hline \\hline \n
 """
 

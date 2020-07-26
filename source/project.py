@@ -303,7 +303,6 @@ class Project:
 	def valuesHartree(self,cifras):
 		lista =[]
 		lista.append(self.energia+'('+ self.shortName+')')
-		lista.append(self.dftNumber)
 		lista.append(str(round(self.e_H ,cifras)))
 		lista.append(str(round(self.e_L ,cifras)))
 		lista.append(str(round(self.e_S ,cifras)))
@@ -312,13 +311,11 @@ class Project:
 		lista.append(str(round(self.j_A ,cifras)))
 		lista.append(str(round(self.j_HL ,cifras)))
 		lista.append(str(round(self.deltaSL ,cifras)))
-		lista.append(str(round(self.desviation ,cifras)))
 		return lista
 	def valuesEV(self,cifras):
 		eV = 27.2116
 		lista =[]
 		lista.append(self.energia+'('+ self.shortName+')')
-		lista.append(self.dftNumber)
 		lista.append(str(round(eV * self.e_H ,cifras)))
 		lista.append(str(round(eV * self.e_L ,cifras)))
 		lista.append(str(round(eV * self.e_S ,cifras)))
@@ -327,14 +324,12 @@ class Project:
 		lista.append(str(round(eV * self.j_A ,cifras)))
 		lista.append(str(round(eV * self.j_HL ,cifras)))
 		lista.append(str(round(eV * self.deltaSL ,cifras)))
-		lista.append(str(round(eV * self.desviation ,cifras)))
 		return lista
 
 	def valuesKcalMol(self,cifras):
 		kcalMol = 627.5095
 		lista =[]
 		lista.append(self.energia+'('+ self.shortName+')')
-		lista.append(self.dftNumber)
 		lista.append(str(round(kcalMol  * self.e_H ,cifras)))
 		lista.append(str(round(kcalMol  * self.e_L ,cifras)))
 		lista.append(str(round(kcalMol  * self.e_S ,cifras)))
@@ -343,14 +338,12 @@ class Project:
 		lista.append(str(round(kcalMol  * self.j_A ,cifras)))
 		lista.append(str(round(kcalMol  * self.j_HL ,cifras)))
 		lista.append(str(round(kcalMol  * self.deltaSL ,cifras)))
-		lista.append(str(round(kcalMol  * self.desviation ,cifras)))
 		return lista
 
 	def valuesKJMol(self,cifras):
 		KJMol = 2625.4997
 		lista =[]
 		lista.append(self.energia+'('+ self.shortName+')')
-		lista.append(self.dftNumber)
 		lista.append(str(round(KJMol  * self.e_H ,cifras)))
 		lista.append(str(round(KJMol  * self.e_L ,cifras)))
 		lista.append(str(round(KJMol  * self.e_S ,cifras)))
@@ -359,13 +352,11 @@ class Project:
 		lista.append(str(round(KJMol  * self.j_A ,cifras)))
 		lista.append(str(round(KJMol  * self.j_HL ,cifras)))
 		lista.append(str(round(KJMol  * self.deltaSL ,cifras)))
-		lista.append(str(round(KJMol  * self.desviation ,cifras)))
 		return lista
 
 	def labels(self):
 		lista = []
 		lista.append('Density Functional')
-		lista.append('Method')
 		lista.append('E_H')
 		lista.append('E_L')
 		lista.append('E_S')
@@ -374,7 +365,6 @@ class Project:
 		lista.append('J_A')
 		lista.append('J_HL')
 		lista.append('Delta_SL')
-		lista.append('Delta_SL/E_H')
 		return lista
 
 class ProjectMethod:

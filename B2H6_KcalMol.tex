@@ -1,0 +1,45 @@
+
+\documentclass[preprint,landscape,12pt]{elsarticle}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{color}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[T1]{fontenc}       % Use modern font encodings
+\usepackage{subcaption}
+\usepackage{latexsym}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{adjustbox}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{commath}
+\usepackage{booktabs,caption}
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{threeparttable}
+
+\journal{JOURNAL}
+\begin{document}
+	\begin{table}
+		\caption{ Tabla kcal/mol}
+		\centering
+		\footnotesize
+		\begin{tabular}{lrrrrrrrr}
+			\hline
+			\textbf{Density}    & $\varepsilon_{_{\mathrm{H}}}$	& $\varepsilon_{_{\mathrm{L}}}$  & $\varepsilon_{_{\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\mathrm{HL})$  & \textbf{$\left|\Delta\,\mathrm{SL}\right|$}  \\
+			\textbf{Functional} &   &  &     &   &  &  &  &  \\
+			\hline \hline 
+
+RPBE0DH(B2H6) & -243.69959 & 2.68574 & 48.45628 & 246.38533 & 33.41729 & 22.78342 & 40.44502 & 45.77054\\
+RPBE0DH(B2H6) & -243.69959 & 2.68574 & 48.45628 & 246.38533 & 33.41729 & 22.78342 & 40.44502 & 45.77054\\
+RPBE0DH(B2H6) & -243.69959 & 2.68574 & 48.45628 & 246.38533 & 33.41729 & 22.78342 & 40.44502 & 45.77054\\
+RPBE0DH(B2H6) & -243.69959 & 2.68574 & 48.45628 & 246.38533 & 33.41729 & 22.78342 & 40.44502 & 45.77054\\
+
+	 		\hline
+		\end{tabular}
+			\label{tab:kcal/mol}
+	\end{table}
+\end{document}
+\endinput
+

@@ -172,6 +172,10 @@ for project in listProjectMethod[nproject].lista:
 #latex("TablaHartree.tex", listProjectMethod[nproject].lista,5,"hartree")
 #csv("TablaHartree.csv", listProjectMethod[nproject].lista,5,"hartree")
 
+nameCurrentProject = listProjectMethod[nproject].getName()
+
+fileOutputTex = nameCurrentProject +'_Hartree.tex'
+fileOutputCsv = nameCurrentProject +'_Hartree.csv'
 while True:
 	if vision:
 
@@ -183,8 +187,8 @@ while True:
 		answer = str(input("Export Files to Hartree    y/n: ?\n"))
 
 	if answer == 'y':
-		latex("TablaHartree.tex", listProjectMethod[nproject].lista,5,"hartree")
-		csv("TablaHartree.csv", listProjectMethod[nproject].lista,5,"hartree")
+		latex(fileOutputTex , listProjectMethod[nproject].lista, 5, "hartree")
+		csv(fileOutputCsv   , listProjectMethod[nproject].lista, 5, "hartree")
 		if vision:
 			screen.clear()
 			printCenter("Generate Hartree Files !",screen)
@@ -194,8 +198,8 @@ while True:
 			printTop('*** Working ***',screen)
 		else:
 			printElementName('Output Files','*',40)
-			print('Tex File:','TablaHartree.tex')
-			print('Csv File:','TablaHartree.csv')
+			print('Tex File:',fileOutputTex)
+			print('Csv File:',fileOutputCsv)
 			printElement('*',40)
 		break
 	elif answer == 'n':
@@ -214,6 +218,8 @@ while True:
 		else:
 			print('Action not valid: ', answer)
 
+fileOutputTex = nameCurrentProject +'_EV.tex'
+fileOutputCsv = nameCurrentProject +'_EV.csv'
 while True:
 	if vision:
 		answer = str(my_raw_input("Export Files to eV  y/n ? " ,screen))
@@ -224,8 +230,10 @@ while True:
 		answer = str(input("Export Files to eV   y/n: ?\n"))
 
 	if answer == 'y':
-		latex("TablaEV.tex", listProjectMethod[nproject].lista,5,"eV")
-		csv("TablaEV.csv", listProjectMethod[nproject].lista,5,"eV")
+		
+
+		latex(fileOutputTex, listProjectMethod[nproject].lista, 5, "eV")
+		csv(fileOutputCsv  , listProjectMethod[nproject].lista, 5, "eV")
 		if vision:
 			screen.clear()
 			printCenter("Generate eV Files !",screen)
@@ -235,8 +243,8 @@ while True:
 			printTop('*** Working ***',screen)
 		else:
 			printElementName('Output Files','*',40)
-			print('Tex File:','TablaEV.tex')
-			print('Csv File:','TablaEV.csv')
+			print('Tex File:',fileOutputTex)
+			print('Csv File:',fileOutputCsv)
 			printElement('*',40)
 		break
 	elif answer == 'n':
@@ -254,8 +262,11 @@ while True:
 		else:
 			print('Action not valid: ', answer)
 
+fileOutputTex = nameCurrentProject +'_KcalMol.tex'
+fileOutputCsv = nameCurrentProject +'_KcalMol.csv'
 
 while True:
+	
 	if vision:
 		answer = str(my_raw_input("Export Files to kcal/mol  y/n ? " ,screen))
 		answer = answer.replace('b\'','')
@@ -265,8 +276,8 @@ while True:
 		answer = str(input("Export Files to kcal/mol   y/n: ?\n"))
 
 	if answer == 'y':
-		latex("TablaKcalMol.tex", listProjectMethod[nproject].lista,5,"kcal/mol")
-		csv("TablaKcalMol.csv", listProjectMethod[nproject].lista,5,"kcal/mol")
+		latex(fileOutputTex   , listProjectMethod[nproject].lista, 5, "kcal/mol")
+		csv(fileOutputCsv     , listProjectMethod[nproject].lista, 5, "kcal/mol")
 		if vision:
 			screen.clear()
 			printCenter("Generate kcal/mol Files !",screen)
@@ -276,8 +287,8 @@ while True:
 			printTop('*** Working ***',screen)
 		else:
 			printElementName('Output Files','*',40)
-			print('Tex File:','TablaKcalMol.tex')
-			print('Csv File:','TablaKcalMol.csv')
+			print('Tex File:',fileOutputTex)
+			print('Csv File:',fileOutputCsv)
 			printElement('*',40)
 		break
 	elif answer == 'n':
@@ -295,7 +306,8 @@ while True:
 		else:
 			print('Action not valid: ', answer)
 
-
+fileOutputTex = nameCurrentProject +'_KJMol.tex'
+fileOutputCsv = nameCurrentProject +'_KJMol.csv'
 
 while True:
 	if vision:
@@ -307,8 +319,8 @@ while True:
 		answer = str(input("Export Files to kJ/mol  y/n: ?\n"))
 
 	if answer == 'y':
-		latex("TablaKJMol.tex", listProjectMethod[nproject].lista,5,"kJ/mol")
-		csv("TablaKJMol.csv", listProjectMethod[nproject].lista,5,"kJ/mol")
+		latex(fileOutputTex , listProjectMethod[nproject].lista, 5, "kJ/mol")
+		csv(fileOutputCsv   , listProjectMethod[nproject].lista, 5, "kJ/mol")
 		if vision:
 			screen.clear()
 			printCenter("Generate kJ/mol Files !",screen)
@@ -318,8 +330,8 @@ while True:
 			printTop('*** Working ***',screen)
 		else:
 			printElementName('Output Files','*',40)
-			print('Tex File:','TablaKJMol.tex')
-			print('Csv File:','TablaKJMol.csv')
+			print('Tex File:',fileOutputTex)
+			print('Csv File:',fileOutputCsv)
 			printElement('*',40)
 		break
 	elif answer == 'n':
@@ -342,8 +354,8 @@ if vision:
 	screen.clear()
 
 	printCenter('Thanks you :) ',screen)
-
-	screen.getch()
+	screen.refresh()
+	curses.napms(2000)
 	curses.endwin()
 else:
 	printElement('-',40)
