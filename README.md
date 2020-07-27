@@ -7,11 +7,11 @@ Requiere python 3.
 
 ## Installation
 
-Copia la carpeta JFINDEX en tu computador. 
+Descarga el proyecto desde Github usando la opción zip o git clone. Mueve el proyecto JFINDEX a una carpeta en tu computador. 
 
-Descomprime el archivo
+Descomprime el archivo zip mediante consola o usando las herramientas del sistema operativo (click derecho descomprimir)
 ```
-$ tar -xvf  jfindex.tar
+$unzip jfindex.zip
 ```
 También puedes crear un alias en $ .bashrc. Utiliza un editor de texto 
 ```
@@ -21,6 +21,7 @@ Y agrega esta ultima linea:
 ```
 alias jfindex='python /home/user/jfindex/jfindex.py'
 ```
+la ruta es donde esta guardado el proyecto en tu computadora
 
 ## Ejecución
 Debes tener los 3 archivos .log (proyecto JFINDEX), luego ejecutar el programa mediante el comando python
