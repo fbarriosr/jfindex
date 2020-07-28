@@ -13,9 +13,9 @@ Descomprime el archivo zip mediante consola o usando las herramientas del sistem
 ```
 $unzip jfindex.zip
 ```
-También puedes crear un alias en $ .bashrc. Utiliza un editor de texto 
+También puedes crear un alias en $ .bashrc. (en MAC OS se llama "bash_profile") Utiliza un editor de texto (vi, vim, nano u otro)
 ```
-$ vi ~.bashrc
+$ nano ~.bashrc
 ```
 Y agrega esta ultima linea: 
 ```
