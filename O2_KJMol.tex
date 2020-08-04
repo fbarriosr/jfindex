@@ -1,0 +1,46 @@
+
+\documentclass[preprint,landscape,12pt]{elsarticle}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{color}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[T1]{fontenc}       % Use modern font encodings
+\usepackage{subcaption}
+\usepackage{latexsym}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{adjustbox}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{commath}
+\usepackage{booktabs,caption}
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{threeparttable}
+
+\journal{JOURNAL}
+\begin{document}
+	\begin{table}
+		\caption{ Tabla kJ/mol}
+		\centering
+		\footnotesize
+		\begin{tabular}{lrrrrrrrr}
+			\hline
+			\textbf{Density}    & $\varepsilon_{_{\mathrm{H}}}$	& $\varepsilon_{_{\mathrm{L}}}$  & $\varepsilon_{_{\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\mathrm{HL})$  & \textbf{$\left|\Delta\,\mathrm{SL}\right|$}  \\
+			\textbf{Functional} &   &  &     &   &  &  &  &  \\
+			\hline \hline 
+
+UM06(O2) & -860.79633 & 143.50981 & 238.92047 & 1004.30615 & 401.33304 & 143.29821 & 426.14855 & 95.41066\\
+UB-LYP(O2) & -682.49865 & 137.18236 & 389.04655 & 819.68101 & 551.99679 & 141.90031 & 569.94399 & 251.86419\\
+UVSXC(O2) & -696.96515 & 219.20297 & 392.93229 & 916.16812 & 545.82835 & 189.55213 & 577.80498 & 173.72932\\
+UTPSS-TPSS(O2) & -693.34196 & 177.77258 & 395.74157 & 871.11455 & 539.84467 & 169.92437 & 565.95632 & 217.96899\\
+UPBE1PBE(O2) & -866.86124 & 248.10972 & 263.36387 & 1114.97096 & 385.09041 & 225.45178 & 446.23215 & 15.25415\\
+
+	 		\hline
+		\end{tabular}
+			\label{tab:kJ/mol}
+	\end{table}
+\end{document}
+\endinput
+

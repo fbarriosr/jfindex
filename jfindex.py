@@ -165,9 +165,88 @@ else:
 # working togheter
 for project in listProjectMethod[nproject].lista:
 	project.stageS1()
-	project.stageS2()
-	project.stageS3()
-	project.stageS4()
+	nameaux = project.getName()
+	if project.s1 :
+		if vision:
+		    curses.napms(1000)
+		    screen.clear()
+		    printCenter(nameaux,screen)
+		    printTop('**** Working S1 ****',screen)
+		    screen.refresh()
+
+		else:
+			printElementName(nameaux,'',40) 
+			printElementName(' --> S1 OK','',40) 
+		project.stageS2()
+		if project.s2 :
+			if vision:
+			    curses.napms(1000)
+			    screen.clear()
+			    printCenter(nameaux,screen)
+			    printTop('**** Working S2 ****',screen)
+			    screen.refresh()
+			else:
+				printElementName(' --> S2 OK','',40) 
+			project.stageS3()
+			if project.s3:
+				if vision:
+				    curses.napms(1000)
+				    screen.clear()
+				    printCenter(nameaux,screen)
+				    printTop('**** Working S3 ****',screen)
+				    screen.refresh()
+				else:
+					printElementName(' --> S3 OK','',40) 
+				project.stageS4()
+				if project.s4: 
+					if vision:
+					    curses.napms(1000)
+					    screen.clear()
+					    printCenter(nameaux,screen)
+					    printTop('**** Working S4 ****',screen)
+					    screen.refresh()
+					else:
+						printElementName(' --> S4 OK','',40) 
+				else:
+					if vision:
+					    curses.napms(1000)
+					    screen.clear()
+					    printCenter(nameaux,screen)
+					    printTop('**** ERROR S4 ****',screen)
+					    screen.refresh()
+					else:
+						printElementName(nameaux+'ERROR S4','*',40)
+			else:
+				if vision:
+				    curses.napms(1000)
+				    screen.clear()
+				    printCenter(nameaux,screen)
+				    printTop('**** ERROR S3 ****',screen)
+				    screen.refresh()
+				else:
+					printElementName(nameaux+'ERROR S3','*',40) 
+		else:
+			if vision:
+			    curses.napms(1000)
+			    screen.clear()
+			    printCenter(nameaux,screen)
+			    printTop('**** ERROR S2 ****',screen)
+			    screen.refresh()
+
+			else:
+				printElementName(nameaux+'ERROR S2','*',40) 
+	else:
+		if vision:
+		    curses.napms(1000)
+		    screen.clear()
+		    printCenter(nameaux,screen)
+		    printTop('**** ERROR S1 ****',screen)
+		    screen.refresh()
+
+		else:
+			printElementName(nameaux+'ERROR S1','*',40) 
+	
+	#project.view()
 
 #latex("TablaHartree.tex", listProjectMethod[nproject].lista,5,"hartree")
 #csv("TablaHartree.csv", listProjectMethod[nproject].lista,5,"hartree")

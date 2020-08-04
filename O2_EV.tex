@@ -1,0 +1,46 @@
+
+\documentclass[preprint,landscape,12pt]{elsarticle}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{color}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[T1]{fontenc}       % Use modern font encodings
+\usepackage{subcaption}
+\usepackage{latexsym}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{adjustbox}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{commath}
+\usepackage{booktabs,caption}
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{threeparttable}
+
+\journal{JOURNAL}
+\begin{document}
+	\begin{table}
+		\caption{ Tabla eV}
+		\centering
+		\footnotesize
+		\begin{tabular}{lrrrrrrrr}
+			\hline
+			\textbf{Density}    & $\varepsilon_{_{\mathrm{H}}}$	& $\varepsilon_{_{\mathrm{L}}}$  & $\varepsilon_{_{\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\mathrm{HL})$  & \textbf{$\left|\Delta\,\mathrm{SL}\right|$}  \\
+			\textbf{Functional} &   &  &     &   &  &  &  &  \\
+			\hline \hline 
+
+UM06(O2) & -8.9216 & 1.48739 & 2.47626 & 10.40898 & 4.15956 & 1.48519 & 4.41675 & 0.98887\\
+UB-LYP(O2) & -7.07366 & 1.42181 & 4.03221 & 8.49546 & 5.72109 & 1.4707 & 5.9071 & 2.61041\\
+UVSXC(O2) & -7.22359 & 2.2719 & 4.07249 & 9.49549 & 5.65716 & 1.96458 & 5.98857 & 1.80059\\
+UTPSS-TPSS(O2) & -7.18604 & 1.8425 & 4.1016 & 9.02854 & 5.59514 & 1.76116 & 5.86577 & 2.25911\\
+UPBE1PBE(O2) & -8.98445 & 2.5715 & 2.7296 & 11.55595 & 3.99121 & 2.33666 & 4.62491 & 0.1581\\
+
+	 		\hline
+		\end{tabular}
+			\label{tab:eV}
+	\end{table}
+\end{document}
+\endinput
+

@@ -190,31 +190,34 @@ class Project:
 	def stageS1(self):
 		if self.status:
 			fileName = self.getNameMainFile()
+			#print('fileName',fileName)
 			with open(fileName) as f:
 				lines = f.readlines() #read
 				f.close()
 			tSistema = False
 			tLumo    = False
 			tHomo    = False
-
 			tPopulation = False
 			prevLine  = 0
 			for line in lines:
 				if not(tSistema):             # buscamos Sistema
-					if line.find('SCF Done') != -1:
+					if line.upper().find('SCF DONE')!= -1:
 						t = line.split()
 						self.e_N = float(t[4])
-						#print ('t:',t)
-						#print('e_N:',self.e_N )
 						self.energia =  t[2]
 						self.energia = self.energia.replace('E(','')
 						self.energia = self.energia.replace(')','')
+						#print ('Linea:')
+						#print (t)
 						#print('energia:',self.energia)
+						#print('e_N:',self.e_N)
 						tSistema = True
 				elif not(tLumo):
 					if not(tPopulation):
-						if line.find('Population analysis using the SCF Density.') != -1:
+
+						if line.upper().find('POPULATION ANALYSIS USING THE SCF DENSITY') != -1:
 							tPopulation = True
+							#print('Population analysis using the SCF Density:',True)
 					else:
 						if line.find('Alpha virt. eigenvalues') != -1:
 							t = line.split()
@@ -248,13 +251,13 @@ class Project:
 			prevLine  = 0
 			for line in lines:
 				if not(tSistema):             # buscamos Sistema
-					if line.find('SCF Done') != -1:
+					if line.upper().find('SCF DONE')!= -1:
 						t = line.split()
 						self.e_NP1 = float(t[4])
 						tSistema = True
 				elif not(tSomo):
 					if not(tPopulation):
-						if line.find('Population analysis using the SCF Density.') != -1:
+						if line.upper().find('POPULATION ANALYSIS USING THE SCF DENSITY') != -1:
 							tPopulation = True
 					else:
 						if line.find('Alpha virt. eigenvalues') != -1:
@@ -278,7 +281,7 @@ class Project:
 			tSistema = False
 			for line in lines:
 				if not(tSistema):             # buscamos Sistema
-					if line.find('SCF Done') != -1:
+					if line.upper().find('SCF DONE')!= -1:
 						t = line.split()
 						self.e_NN1 = float(t[4])
 						tSistema = True

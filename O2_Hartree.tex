@@ -1,0 +1,46 @@
+
+\documentclass[preprint,landscape,12pt]{elsarticle}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{color}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[T1]{fontenc}       % Use modern font encodings
+\usepackage{subcaption}
+\usepackage{latexsym}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{adjustbox}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{commath}
+\usepackage{booktabs,caption}
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{threeparttable}
+
+\journal{JOURNAL}
+\begin{document}
+	\begin{table}
+		\caption{ Tabla hartree}
+		\centering
+		\footnotesize
+		\begin{tabular}{lrrrrrrrr}
+			\hline
+			\textbf{Density}    & $\varepsilon_{_{\mathrm{H}}}$	& $\varepsilon_{_{\mathrm{L}}}$  & $\varepsilon_{_{\mathrm{S}}}$& HL$Gap$ & $J(I)$ & $J(A)$ & $J(\mathrm{HL})$  & \textbf{$\left|\Delta\,\mathrm{SL}\right|$}  \\
+			\textbf{Functional} &   &  &     &   &  &  &  &  \\
+			\hline \hline 
+
+UM06(O2) & -0.32786 & 0.05466 & 0.091 & 0.38252 & 0.15286 & 0.05458 & 0.16231 & 0.03634\\
+UB-LYP(O2) & -0.25995 & 0.05225 & 0.14818 & 0.3122 & 0.21024 & 0.05405 & 0.21708 & 0.09593\\
+UVSXC(O2) & -0.26546 & 0.08349 & 0.14966 & 0.34895 & 0.2079 & 0.0722 & 0.22007 & 0.06617\\
+UTPSS-TPSS(O2) & -0.26408 & 0.06771 & 0.15073 & 0.33179 & 0.20562 & 0.06472 & 0.21556 & 0.08302\\
+UPBE1PBE(O2) & -0.33017 & 0.0945 & 0.10031 & 0.42467 & 0.14667 & 0.08587 & 0.16996 & 0.00581\\
+
+	 		\hline
+		\end{tabular}
+			\label{tab:hartree}
+	\end{table}
+\end{document}
+\endinput
+

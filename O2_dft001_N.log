@@ -1,0 +1,325 @@
+ Entering Gaussian System, Link 0=/opt/g09E01ES64L/g09/g09
+ Initial command:
+ /opt/g09E01ES64L/g09/l1.exe "/home/scratch/Gau-7717.inp" -scrdir="/home/scratch/"
+ Entering Link 1 = /opt/g09E01ES64L/g09/l1.exe PID=      7718.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2015,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 09 program.  It is based on
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 09, Revision E.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, 
+ G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, 
+ A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, 
+ M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, 
+ Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr., 
+ J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, 
+ K. N. Kudin, V. N. Staroverov, T. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, 
+ M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, 
+ V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, 
+ O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, 
+ R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, 
+ P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, 
+ O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski, 
+ and D. J. Fox, Gaussian, Inc., Wallingford CT, 2013.
+ 
+ ******************************************
+ Gaussian 09:  ES64L-G09RevE.01 30-Nov-2015
+                 2-Aug-2020 
+ ******************************************
+ %nprocshared=16
+ Will use up to   16 processors via shared memory.
+ %mem=16GB
+ %chk=O2_dft001_N.chk
+ ----------------------------------------------------------------------
+ # UM06/6-311+G(d) Geom=Check Guess=Read SCF=(VeryTight,MaxCyc=500,NoVa
+ rAcc,XQC) Int=(Grid=UltraFine,Acc2e=12)
+ ----------------------------------------------------------------------
+ 1/29=2,38=1/1;
+ 2/12=2,40=1/2;
+ 3/5=4,6=6,7=11,11=2,14=-4,16=1,25=1,30=1,74=-54,75=-5,116=2/1,2,3;
+ 4/5=1/1;
+ 5/5=2,7=500,8=3,13=1,17=3,38=6,87=12/2,8;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 99/5=1,9=1/99;
+ ----------------------------------------------------------------------
+ Single point of a molecule of dioxygen at the UM06/6-311+G(d) level of
+  theory
+ ----------------------------------------------------------------------
+ Structure from the checkpoint file:  "O2_dft001_N.chk"
+ Charge =  0 Multiplicity = 3
+ Redundant internal coordinates found in file.
+ O,0,1.7709577502,-0.37828947,0.
+ O,0,2.9668053898,-0.37828947,0.
+ Recover connectivity data from disk.
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          8           0        1.770958   -0.378289    0.000000
+      2          8           0        2.966805   -0.378289    0.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    O2(3)
+ Framework group  D*H[C*(O.O)]
+ Deg. of freedom     1
+ Full point group                 D*H     NOp   8
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          8           0        0.000000    0.000000    0.597924
+      2          8           0        0.000000    0.000000   -0.597924
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0000000     44.1889379     44.1889379
+ Standard basis: 6-311+G(d) (5D, 7F)
+ There are    12 symmetry adapted cartesian basis functions of AG  symmetry.
+ There are     1 symmetry adapted cartesian basis functions of B1G symmetry.
+ There are     5 symmetry adapted cartesian basis functions of B2G symmetry.
+ There are     5 symmetry adapted cartesian basis functions of B3G symmetry.
+ There are     1 symmetry adapted cartesian basis functions of AU  symmetry.
+ There are    12 symmetry adapted cartesian basis functions of B1U symmetry.
+ There are     5 symmetry adapted cartesian basis functions of B2U symmetry.
+ There are     5 symmetry adapted cartesian basis functions of B3U symmetry.
+ There are    11 symmetry adapted basis functions of AG  symmetry.
+ There are     1 symmetry adapted basis functions of B1G symmetry.
+ There are     5 symmetry adapted basis functions of B2G symmetry.
+ There are     5 symmetry adapted basis functions of B3G symmetry.
+ There are     1 symmetry adapted basis functions of AU  symmetry.
+ There are    11 symmetry adapted basis functions of B1U symmetry.
+ There are     5 symmetry adapted basis functions of B2U symmetry.
+ There are     5 symmetry adapted basis functions of B3U symmetry.
+    44 basis functions,    72 primitive gaussians,    46 cartesian basis functions
+     9 alpha electrons        7 beta electrons
+       nuclear repulsion energy        28.3207828716 Hartrees.
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 4.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+ One-electron integrals computed using PRISM.
+ NBasis=    44 RedAO= T EigKep=  1.07D-03  NBF=    11     1     5     5     1    11     5     5
+ NBsUse=    44 1.00D-06 EigRej= -1.00D+00 NBFU=    11     1     5     5     1    11     5     5
+ Initial guess from the checkpoint file:  "O2_dft001_N.chk"
+ B after Tr=     0.000000    0.000000    0.000000
+         Rot=    1.000000    0.000000    0.000000    0.000000 Ang=   0.00 deg.
+ Initial guess orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG)
+                 (PIG)
+       Virtual   (SGU) (SGG) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (SGU) (PIU) (PIU) (SGG) (SGU) (PIG) (PIG) (SGG)
+                 (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (PIU) (PIU) (SGG) (PIG)
+                 (PIG) (SGU) (SGG) (SGU)
+ Beta  Orbitals:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (SGG) (PIU) (PIU)
+       Virtual   (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (SGG) (PIG)
+                 (PIG) (SGU) (SGU) (PIU) (PIU) (SGG) (SGU) (PIG)
+                 (PIG) (SGG) (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (SGG) (PIG) (PIG) (SGU) (PIU) (PIU) (SGG)
+                 (PIG) (PIG) (SGU) (SGG) (SGU)
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 1.0000 <S**2>= 2.0076 S= 1.0025
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=1389031.
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ SCF Done:  E(UM06) =  -150.291343553     A.U. after    1 cycles
+            NFock=  1  Conv=0.31D-09     -V/T= 2.0015
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 1.0000 <S**2>= 2.0076 S= 1.0025
+ <L.S>= 0.000000000000E+00
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     2.0076,   after     2.0000
+ QCSCF skips out because SCF is already converged.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG)
+                 (PIG)
+       Virtual   (SGU) (SGG) (PIU) (PIU) (PIG) (PIG) (SGG) (SGU)
+                 (SGU) (PIU) (PIU) (SGG) (SGU) (PIG) (PIG) (SGG)
+                 (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (PIU) (PIU) (SGG) (PIG)
+                 (PIG) (SGU) (SGG) (SGU)
+ Beta  Orbitals:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (SGG) (PIU) (PIU)
+       Virtual   (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (SGG) (PIG)
+                 (PIG) (SGU) (SGU) (PIU) (PIU) (SGG) (SGU) (PIG)
+                 (PIG) (SGG) (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU)
+                 (DLTU) (SGG) (PIG) (PIG) (SGU) (PIU) (PIU) (SGG)
+                 (PIG) (PIG) (SGU) (SGG) (SGU)
+ The electronic state is 3-SGG.
+ Alpha  occ. eigenvalues --  -19.37995 -19.37973  -1.36452  -0.87011  -0.59628
+ Alpha  occ. eigenvalues --   -0.59628  -0.59160  -0.32786  -0.32786
+ Alpha virt. eigenvalues --    0.05466   0.06157   0.09117   0.09117   0.15585
+ Alpha virt. eigenvalues --    0.15585   0.16012   0.24553   0.30112   0.89705
+ Alpha virt. eigenvalues --    0.89705   0.91323   0.93045   0.97312   0.97312
+ Alpha virt. eigenvalues --    1.17392   1.47564   2.23009   2.23009   2.54059
+ Alpha virt. eigenvalues --    2.54059   2.81825   2.81825   2.89506   3.44101
+ Alpha virt. eigenvalues --    3.44101   3.85835   4.70430   4.70430   4.83047
+ Alpha virt. eigenvalues --    4.95824   4.95824   6.16237  49.55951  49.69829
+  Beta  occ. eigenvalues --  -19.35545 -19.35505  -1.29471  -0.78540  -0.53213
+  Beta  occ. eigenvalues --   -0.49959  -0.49959
+  Beta virt. eigenvalues --   -0.12147  -0.12147   0.06509   0.07095   0.10350
+  Beta virt. eigenvalues --    0.10350   0.16256   0.17729   0.17729   0.29312
+  Beta virt. eigenvalues --    0.31010   0.92127   0.92127   0.92268   0.94141
+  Beta virt. eigenvalues --    1.00527   1.00527   1.20548   1.50051   2.27258
+  Beta virt. eigenvalues --    2.27258   2.62025   2.62025   2.90877   2.90877
+  Beta virt. eigenvalues --    2.94549   3.49805   3.49805   3.87080   4.81428
+  Beta virt. eigenvalues --    4.81428   4.82116   5.07204   5.07204   6.18618
+  Beta virt. eigenvalues --   49.59768  49.73706
+          Condensed to atoms (all electrons):
+               1          2
+     1  O    7.760691   0.239309
+     2  O    0.239309   7.760691
+          Atomic-Atomic Spin Densities.
+               1          2
+     1  O    1.416551  -0.416551
+     2  O   -0.416551   1.416551
+ Mulliken charges and spin densities:
+               1          2
+     1  O   -0.000000   1.000000
+     2  O   -0.000000   1.000000
+ Sum of Mulliken charges =  -0.00000   2.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  O   -0.000000   1.000000
+     2  O   -0.000000   1.000000
+ Electronic spatial extent (au):  <R**2>=             43.3356
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=             -0.0000    Y=              0.0000    Z=              0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=            -10.0330   YY=            -10.0330   ZZ=            -10.7467
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=              0.2379   YY=              0.2379   ZZ=             -0.4758
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=             -0.0000  YYY=              0.0000  ZZZ=              0.0000  XYY=             -0.0000
+  XXY=              0.0000  XXZ=              0.0000  XZZ=             -0.0000  YZZ=              0.0000
+  YYZ=             -0.0000  XYZ=              0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -7.2244 YYYY=             -7.2244 ZZZZ=            -28.8125 XXXY=              0.0000
+ XXXZ=              0.0000 YYYX=              0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -2.4081 XXZZ=             -6.3272 YYZZ=             -6.3272
+ XXYZ=              0.0000 YYXZ=              0.0000 ZZXY=             -0.0000
+ N-N= 2.832078287164D+01 E-N=-4.123867790411D+02  KE= 1.500693122899D+02
+ Symmetry AG   KE= 6.969294589963D+01
+ Symmetry B1G  KE= 1.003338106012D-34
+ Symmetry B2G  KE= 3.061658316422D+00
+ Symmetry B3G  KE= 3.061658316422D+00
+ Symmetry AU   KE= 2.435496255604D-34
+ Symmetry B1U  KE= 6.510016109103D+01
+ Symmetry B2U  KE= 4.576444333212D+00
+ Symmetry B3U  KE= 4.576444333212D+00
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  O(17)              0.07592     -23.01033      -8.21066      -7.67542
+     2  O(17)              0.07592     -23.01033      -8.21066      -7.67542
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        1.209546      1.209546     -2.419092
+     2   Atom        1.209546      1.209546     -2.419092
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.000000     -0.000000      0.000000
+     2   Atom        0.000000     -0.000000      0.000000
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -2.4191   175.044    62.460    58.388  0.0000  0.0000  1.0000
+     1 O(17)  Bbb     1.2095   -87.522   -31.230   -29.194  1.0000  0.0000  0.0000
+              Bcc     1.2095   -87.522   -31.230   -29.194  0.0000  1.0000  0.0000
+ 
+              Baa    -2.4191   175.044    62.460    58.388  0.0000  0.0000  1.0000
+     2 O(17)  Bbb     1.2095   -87.522   -31.230   -29.194  1.0000 -0.0043 -0.0000
+              Bcc     1.2095   -87.522   -31.230   -29.194  0.0043  1.0000  0.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ 1\1\GINC-LOCALHOST\SP\UM06\6-311+G(d)\O2(3)\ROOT\02-Aug-2020\0\\# UM06
+ /6-311+G(d) Geom=Check Guess=Read SCF=(VeryTight,MaxCyc=500,NoVarAcc,X
+ QC) Int=(Grid=UltraFine,Acc2e=12)\\Single point of a molecule of dioxy
+ gen at the UM06/6-311+G(d) level of theory\\0,3\O,0,1.7709577502,-0.37
+ 828947,0.\O,0,2.9668053898,-0.37828947,0.\\Version=ES64L-G09RevE.01\St
+ ate=3-SGG\HF=-150.2913436\S2=2.007585\S2-1=0.\S2A=2.00003\RMSD=3.085e-
+ 10\Dipole=0.,0.,0.\Quadrupole=-0.3537476,0.1768738,0.1768738,0.,0.,0.\
+ PG=D*H [C*(O1.O1)]\\@
+
+
+ Boundary, n.  In political geography, an imaginary
+ line between two nations, separating the imaginary
+ rights of one from the imaginary rights of another.
+                               -- Ambrose Bierce
+ Job cpu time:       0 days  0 hours  0 minutes 19.7 seconds.
+ File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
+ Normal termination of Gaussian 09 at Sun Aug  2 22:31:27 2020.
