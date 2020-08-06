@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import curses
 import os
 import sys
@@ -263,8 +264,10 @@ while True:
 		answer = answer.replace('\'','')
 
 	else:
-		answer = str(input("Export Files to Hartree    y/n: ?\n"))
-
+		if sys.version_info < (3,):  # python 2
+			answer = raw_input("Export Files to Hartree    y/n: ?\n")
+		else:
+			answer = str(input("Export Files to Hartree    y/n: ?\n"))
 	if answer == 'y':
 		latex(fileOutputTex , listProjectMethod[nproject].lista, 5, "hartree")
 		csv(fileOutputCsv   , listProjectMethod[nproject].lista, 5, "hartree")
@@ -306,7 +309,10 @@ while True:
 		answer = answer.replace('\'','')
 
 	else:
-		answer = str(input("Export Files to eV   y/n: ?\n"))
+		if sys.version_info < (3,):  # python 2
+			answer = raw_input("Export Files to Hartree    y/n: ?\n")
+		else:
+			answer = str(input("Export Files to Hartree    y/n: ?\n"))
 
 	if answer == 'y':
 		
@@ -352,7 +358,10 @@ while True:
 		answer = answer.replace('\'','')
 
 	else:
-		answer = str(input("Export Files to kcal/mol   y/n: ?\n"))
+		if sys.version_info < (3,):  # python 2
+			answer = raw_input("Export Files to Hartree    y/n: ?\n")
+		else:
+			answer = str(input("Export Files to Hartree    y/n: ?\n"))
 
 	if answer == 'y':
 		latex(fileOutputTex   , listProjectMethod[nproject].lista, 5, "kcal/mol")
@@ -395,7 +404,10 @@ while True:
 		answer = answer.replace('\'','')
 
 	else:
-		answer = str(input("Export Files to kJ/mol  y/n: ?\n"))
+		if sys.version_info < (3,):  # python 2
+			answer = raw_input("Export Files to Hartree    y/n: ?\n")
+		else:
+			answer = str(input("Export Files to Hartree    y/n: ?\n"))
 
 	if answer == 'y':
 		latex(fileOutputTex , listProjectMethod[nproject].lista, 5, "kJ/mol")
