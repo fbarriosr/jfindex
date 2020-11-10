@@ -96,29 +96,29 @@ def latex(fileName, projects,cifras,modo):
 
 def csv(fileName, projects,cifras,modo):
 
-	header = ' \t '.join(projects[0].labels())
+	header = ' ; '.join(projects[0].labels())
 	header += '\n'
 	#print('Csv File:',fileName)
 	with open(fileName,'w') as f:
 		f.writelines(header) 
 		if modo == "hartree":
 			for project in projects:
-				aux = ' \t '.join(project.valuesHartree(cifras))
+				aux = ' ; '.join(project.valuesHartree(cifras))
 				aux += '\n'
 				f.write(aux)
 		elif modo=="eV":
 			for project in projects:
-				aux = ' \t '.join(project.valuesEV(cifras))
+				aux = ' ; '.join(project.valuesEV(cifras))
 				aux += '\n'
 				f.write(aux)
 		elif modo=="kcal/mol":
 			for project in projects:
-				aux = ' \t '.join(project.valuesKcalMol(cifras))
+				aux = ' ; '.join(project.valuesKcalMol(cifras))
 				aux += '\n'
 				f.write(aux)
 		elif modo=="kJ/mol":
 			for project in projects:
-				aux = ' \t '.join(project.valuesKJMol(cifras))
+				aux = ' ; '.join(project.valuesKJMol(cifras))
 				aux += '\n'
 				f.write(aux)
 		f.close()
