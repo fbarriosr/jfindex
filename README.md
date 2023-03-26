@@ -1,4 +1,4 @@
-[Spanish Version](https://github.com/fbarriosr/LHS/blob/master/README.ES.md)
+[Spanish Version](https://github.com/fbarriosr/jfindex/blob/master/README.ES.md)
 
 ## JFINDEX
 
