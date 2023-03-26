@@ -3,6 +3,10 @@
 
 Este programa genera índices que estiman la calidad de una funcional de la densidad mediante evaluación del cumplimiento del teorema de Koopmans. Necesita los archivos de salida de Gaussian de cálculos de punto sencillo (single point) con N, N+1 y N-1 electrones, como archivos de entrada. JFINDEX genera dos archivos (uno con extensión csv y otro extensión tex),  los cuales contienen de manera tabular los valores de los índices aludidos. Se pueden en emplear en computadores personales con Mac o Windows (jfindex) o en servidores con sistema operativo Linux (version jfindex-server).
 
+## Limitaciones
+
+El programa se desarrollo utilizando python base sin ningun package, debido a que el programa gaussian se encontraba en un clouster sin conexión a internet. Por ende se utilizaron estructuras de datos como listas,  stack y  arboles entre otras.
+
 ## Requerimientos
 
 Requiere python 3.
