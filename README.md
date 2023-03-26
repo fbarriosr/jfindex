@@ -1,50 +1,52 @@
+[Spanish Version](https://github.com/fbarriosr/LHS/blob/master/README.ES.md)
+
 ## JFINDEX
 
-Genera índices que estiman la calidad de una funcional de la densidad mediante evaluación del cumplimiento del teorema de Koopmans. Requiere de archivos de salida de Gaussian de cálculos de punto sencillo (single point) con N, N+1 y N-1 electrones. Genera archivos .csv y .tex donde se contienen de manera tabular los valores de los índices aludidos. Se pueden en emplear en computadores personales con Mac o Windows (jfindex) o en servidores con sistema operativo Linux (jfindex-server).
+This program generates indices that estimate the quality of a density functional by evaluating compliance with the Koopmans theorem. You need the Gaussian output files of single point calculations with N, N+1, and N-1 electrons, as input files. JFINDEX generates two files (one with a csv extension and the other with a tex extension), which contain the values of the aforementioned indexes in a tabular manner. They can be used on personal computers with Mac or Windows (jfindex) or on servers with Linux operating system (version jfindex-server).
 
-## Requerimientos
+## Requirements
 
-Requiere python 3.
+It requires python 3.
 
 ## Installation
 
-Descarga el proyecto desde Github usando la opción zip o git clone. Mueve el proyecto JFINDEX a una carpeta en tu computador. 
+Download the project from Github using the zip or git clone option. Move the JFINDEX project to a folder on your computer.
 
-Descomprime el archivo zip mediante consola o usando las herramientas del sistema operativo (click derecho descomprimir)
+Unzip the zip file via console or using the operating system tools (right click unzip)
 ```
 $unzip jfindex.zip
 ```
-También puedes crear un alias en $ .bashrc. (en MAC OS se llama "bash_profile") Utiliza un editor de texto (vi, vim, nano u otro)
+You can also create an alias in $ .bashrc. (on MAC OS it is called "bash_profile") Use a text editor (vi, vim, nano or other)
 ```
 $ nano ~.bashrc
 ```
-Y agrega esta ultima linea: 
+And add this last line:
 ```
 alias jfindex='python /home/user/jfindex/jfindex.py'
 ```
-la ruta es donde esta guardado el proyecto en tu computadora
+the path is where the project is saved on your computer
 
-## Ejecución
-Debes tener los 3 archivos .log (proyecto JFINDEX), luego ejecutar el programa mediante el comando python
+## Execution
+You should have all 3 .log files (JFINDEX project), then run the program via python command
 
-Versión Gráfica:
+Graphic version:
 ```
 $ python /home/user/jfindex/jfindex.py'
 ```
-Version Linea de Comandos:
+Command Line Version:
 ```
 $ python /home/user/jfindex/jfindex.py' more
 ```
-o simplemente usado el alias jfindex:
+or just used the alias jfindex:
 
-Versión Gráfica:
+Graphic version:
 ```
-$ jfindex
+$jfindex
 ```
 ![](https://webdesign.s3-us-west-2.amazonaws.com/jfindex/jfindex.png)
 
-Version Linea de Comandos:
+Command Line Version:
 ```
-$ jfindex more
+$jfindex more
 ```
 ![](https://webdesign.s3-us-west-2.amazonaws.com/jfindex/jfindex_more.png)
