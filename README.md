@@ -2,7 +2,7 @@
 
 ## JFINDEX
 
-This program generates indices that estimate the quality of a density functional by evaluating compliance with the Koopmans theorem. You need the Gaussian output files of single point calculations with N, N+1, and N-1 electrons, as input files. JFINDEX generates two files (one with a csv extension and the other with a tex extension), which contain the values of the aforementioned indexes in a tabular manner. They can be used on personal computers with Mac or Windows (jfindex) or on servers with Linux operating system (version jfindex-server).
+This program generates indices that estimate the quality of a density functional by evaluating its compliance with Koopmans' theorem. Gaussian output files of single point calculations with N, N+1, and N-1 electrons are required as input files. JFINDEX generates two files (one with a csv extension and the other with a latex extension), which contain the values of the aforementioned indexes in a tabular format. They can be used on personal computers with Mac or Windows (JFINDEX) or on servers with Linux operating system (version JFINDEX-SERVER).
 
 ## Limitations
 
